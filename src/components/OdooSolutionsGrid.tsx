@@ -1,70 +1,66 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CircleDollarSign, Boxes, Users, Wrench, Globe, HeartHandshake, ArrowRight } from "lucide-react";
+import { Boxes, CircleDollarSign, Users, Wrench, Briefcase, HeartHandshake, LineChart, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const bentoItems = [
-    {
-        title: "Financiën",
-        description: "Real-time inzicht in uw cashflow en automatische bankkoppelingen. Focus op ROI, niet op administratie.",
-        icon: CircleDollarSign,
-        href: "/odoo-modules/financien",
-        gradient: "from-emerald-500 to-teal-400",
-        glowColor: "rgba(16, 185, 129, 0.15)",
-        span: "md:col-span-2 md:row-span-2",
-        large: true,
-    },
+const solutions = [
     {
         title: "Voorraad & WMS",
-        description: "Real-time tracking, geautomatiseerde bestellingen en slim magazijnbeheer dat schaalt met uw groei.",
+        description: "Real-time tracking, geautomatiseerde bestellingen en slim magazijnbeheer.",
         icon: Boxes,
         href: "/odoo-modules/voorraad-en-wms",
-        gradient: "from-blue-500 to-cyan-400",
-        glowColor: "rgba(59, 130, 246, 0.15)",
-        span: "md:col-span-2",
-        large: false,
+        color: "from-blue-500 to-cyan-400",
+        bgLight: "bg-blue-50"
+    },
+    {
+        title: "Financiën",
+        description: "Geïntegreerde boekhouding, facturatie en onkosten met directe multi-valuta rapportage.",
+        icon: CircleDollarSign,
+        href: "/odoo-modules/financien",
+        color: "from-emerald-500 to-teal-400",
+        bgLight: "bg-emerald-50"
     },
     {
         title: "CRM & Verkoop",
-        description: "Beheer leads en offertes in een vloeiende pipeline.",
+        description: "Volg leads, sluit deals en krijg moeiteloos nauwkeurige verkoopprognoses.",
         icon: Users,
         href: "/odoo-modules/crm-en-verkoop",
-        gradient: "from-brand-magenta to-pink-500",
-        glowColor: "rgba(236, 72, 153, 0.15)",
-        span: "",
-        large: false,
+        color: "from-brand-magenta to-pink-500",
+        bgLight: "bg-pink-50"
     },
     {
         title: "Productie (MRP)",
-        description: "Stroomlijn complexe productieprocessen met precisie.",
+        description: "Plan en volg uw productieprocessen met geavanceerde MRP-integratie.",
         icon: Wrench,
         href: "/odoo-modules/productie",
-        gradient: "from-brand-purple to-indigo-500",
-        glowColor: "rgba(139, 92, 246, 0.15)",
-        span: "",
-        large: false,
+        color: "from-brand-purple to-indigo-500",
+        bgLight: "bg-purple-50"
     },
     {
-        title: "Website & eCommerce",
-        description: "Een naadloze integratie tussen uw webshop en back-office.",
-        icon: Globe,
-        href: "/odoo-modules/voorraad-en-wms",
-        gradient: "from-orange-500 to-amber-400",
-        glowColor: "rgba(249, 115, 22, 0.15)",
-        span: "md:col-span-2",
-        large: false,
+        title: "Project Management",
+        description: "Plan taken, beheer urenstaten en houd projecten moeiteloos binnen budget.",
+        icon: Briefcase,
+        href: "/odoo-modules/projectmanagement",
+        color: "from-orange-500 to-amber-400",
+        bgLight: "bg-orange-50"
     },
     {
-        title: "HR & Planning",
-        description: "Efficiënt personeelsbeheer voor groeiende teams.",
+        title: "Human Resources",
+        description: "Centraliseer medewerkersgegevens, werving, en urenregistratie in één overzicht.",
         icon: HeartHandshake,
         href: "/odoo-modules/human-resources",
-        gradient: "from-rose-500 to-red-400",
-        glowColor: "rgba(244, 63, 94, 0.15)",
-        span: "",
-        large: false,
+        color: "from-rose-500 to-red-400",
+        bgLight: "bg-rose-50"
     },
+    {
+        title: "Business Intelligence",
+        description: "Transformeer ruwe data naar visuele dashboards voor datagedreven beslissingen.",
+        icon: LineChart,
+        href: "/odoo-modules/business-intelligence",
+        color: "from-violet-500 to-fuchsia-400",
+        bgLight: "bg-violet-50"
+    }
 ];
 
 const containerVariants = {
@@ -72,33 +68,23 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.12,
-            delayChildren: 0.1,
-        },
-    },
+            staggerChildren: 0.1
+        }
+    }
 };
 
 const itemVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.97 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] },
-    },
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
 };
 
 export default function OdooSolutionsGrid() {
     return (
-        <section id="solutions" className="py-24 bg-white relative overflow-hidden">
-            {/* Ambient background elements */}
-            <div className="absolute top-1/4 -left-32 w-96 h-96 bg-brand-magenta/5 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-brand-purple/5 rounded-full blur-3xl pointer-events-none" />
-
-            <div className="container mx-auto px-6 relative z-10">
+        <section id="solutions" className="py-24 bg-white relative">
+            <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-brand-indigo mb-4">
-                        Onze Modules
+                        Geïntegreerde Modules voor Elke Behoefte
                     </h2>
                     <p className="text-lg text-brand-indigo/60 max-w-2xl mx-auto">
                         Ervaar de kracht van een volledig geïntegreerd systeem. Stunda Solutions stemt Odoo perfect af op uw specifieke operationele workflows.
@@ -106,72 +92,49 @@ export default function OdooSolutionsGrid() {
                 </div>
 
                 <motion.div
-                    className="grid grid-cols-1 md:grid-cols-4 gap-5 max-w-6xl mx-auto"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-80px" }}
+                    viewport={{ once: true, margin: "-100px" }}
                 >
-                    {bentoItems.map((item, idx) => (
+                    {solutions.map((solution, idx) => (
                         <motion.div
                             key={idx}
                             variants={itemVariants}
-                            whileHover={{
-                                scale: 1.02,
-                                boxShadow: `0 0 40px ${item.glowColor}, 0 20px 60px rgba(0,0,0,0.08)`,
-                            }}
-                            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                            className={`group relative rounded-xl overflow-hidden cursor-pointer ${item.span} ${item.large ? "min-h-[340px]" : "min-h-[180px]"}`}
-                            style={{ borderRadius: "12px" }}
+                            whileHover={{ y: -5 }}
+                            className="group relative bg-white border border-brand-indigo/5 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
                         >
-                            {/* Glass background */}
-                            <div
-                                className="absolute inset-0 backdrop-blur-sm border border-white/20"
-                                style={{
-                                    background: "linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.6) 100%)",
-                                    borderRadius: "12px",
-                                }}
-                            />
+                            {/* Hover gradient background reveal */}
+                            <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 bg-gradient-to-br ${solution.color}`} />
 
-                            {/* Gradient accent on hover */}
-                            <div
-                                className={`absolute inset-0 opacity-0 group-hover:opacity-[0.07] transition-opacity duration-500 bg-gradient-to-br ${item.gradient}`}
-                                style={{ borderRadius: "12px" }}
-                            />
-
-                            {/* Bottom gradient bar */}
-                            <div
-                                className={`absolute bottom-0 left-0 h-[3px] w-0 group-hover:w-full bg-gradient-to-r ${item.gradient} transition-all duration-500 ease-out z-30`}
-                            />
-
-                            {/* Content */}
-                            <div className={`relative z-10 h-full flex flex-col justify-between ${item.large ? "p-8 md:p-10" : "p-6"}`}>
-                                <div>
-                                    <div className={`${item.large ? "w-14 h-14 mb-6" : "w-11 h-11 mb-4"} rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center shadow-lg`}>
-                                        <item.icon className={`${item.large ? "w-7 h-7" : "w-5 h-5"} text-white`} />
-                                    </div>
-
-                                    <h3 className={`${item.large ? "text-2xl md:text-3xl" : "text-lg"} font-bold text-brand-indigo mb-3`}>
-                                        {item.title}
-                                    </h3>
-
-                                    <p className={`${item.large ? "text-base md:text-lg leading-relaxed" : "text-sm leading-relaxed"} text-brand-indigo/65`}>
-                                        {item.description}
-                                    </p>
-                                </div>
-
-                                <div className="flex items-center text-sm font-semibold text-brand-indigo/70 group-hover:text-brand-magenta transition-colors mt-4">
-                                    Ontdek meer
-                                    <ArrowRight className="w-4 h-4 ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-brand-magenta" />
-                                </div>
+                            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 relative z-10 ${solution.bgLight} group-hover:scale-110 transition-transform duration-300`}>
+                                <solution.icon className={`w-7 h-7 text-transparent bg-clip-text bg-gradient-to-br ${solution.color} !text-brand-indigo`} style={{ stroke: "url(#grad" + idx + ")" }} />
+                                <svg width="0" height="0">
+                                    <linearGradient id={`grad${idx}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="var(--color-brand-magenta)" />
+                                        <stop offset="100%" stopColor="var(--color-brand-purple)" />
+                                    </linearGradient>
+                                </svg>
                             </div>
 
-                            {/* Full clickable link overlay */}
-                            <Link
-                                href={item.href}
-                                className="absolute inset-0 z-20"
-                                aria-label={`Lees meer over ${item.title}`}
-                            />
+                            <h3 className="text-xl font-bold text-brand-indigo mb-3 relative z-10">
+                                {solution.title}
+                            </h3>
+
+                            <p className="text-brand-indigo/70 leading-relaxed mb-6 relative z-10">
+                                {solution.description}
+                            </p>
+
+                            <div className="relative z-10 mt-auto pt-4 border-t border-brand-indigo/5 flex items-center text-sm font-semibold text-brand-indigo group-hover:text-brand-magenta transition-colors">
+                                Ontdek meer
+                                <ArrowRight className="w-4 h-4 ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-brand-magenta" />
+                            </div>
+
+                            {/* Decorative line */}
+                            <div className="absolute bottom-0 left-0 h-1 w-0 group-hover:w-full bg-gradient-to-r transition-all duration-500 ease-out z-10 from-brand-magenta to-brand-purple" />
+
+                            <Link href={solution.href} className="absolute inset-0 z-20" aria-label={`Lees meer over ${solution.title}`} />
                         </motion.div>
                     ))}
                 </motion.div>
