@@ -23,7 +23,7 @@ export default function Productie() {
                         Plan, beheer en optimaliseer uw gehele productieproces met krachtige <strong className="text-brand-purple">MRP-functionaliteiten van Odoo</strong>.
                     </p>
                     <p className="mb-6">
-                        Beheer stuklijsten (BOM), plan werkorders dynamisch in en houd real-time toezicht op de capaciteit van uw werkvloer. Odoo's productie-app is volledig geïntegreerd met uw voorraad, zodat materialen automatisch worden gereserveerd op basis van uw productieplanning.
+                        Beheer stuklijsten (BOM), plan werkorders dynamisch in en houd real-time toezicht op de capaciteit van uw werkvloer. Odoo&apos;s productie-app is volledig geïntegreerd met uw voorraad, zodat materialen automatisch worden gereserveerd op basis van uw productieplanning.
                     </p>
                     <p className="mb-12">
                         Met functies voor kwaliteitscontrole, onderhoud van apparatuur (OEE) en PLM (Product Lifecycle Management) zorgt Odoo voor een vlekkeloze en ononderbroken productielijn.

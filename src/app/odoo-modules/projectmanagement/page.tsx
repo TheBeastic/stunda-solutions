@@ -20,7 +20,7 @@ export default function ProjectManagement() {
 
                 <div className="prose prose-lg prose-indigo max-w-none text-brand-indigo/80">
                     <p className="text-xl mb-8 leading-relaxed font-medium">
-                        Organiseer, plan en voltooi uw projecten op tijd en binnen budget met Odoo's intuïtieve <strong className="text-orange-600">Project Management software</strong>.
+                        Organiseer, plan en voltooi uw projecten op tijd en binnen budget met Odoo&apos;s intuïtieve <strong className="text-orange-600">Project Management software</strong>.
                     </p>
                     <p className="mb-6">
                         Of u nu agile werkt met Kanban-borden of de voorkeur geeft aan gedetailleerde Gantt-grafieken, Odoo past zich aan uw werkwijze aan. Verdeel grote projecten in behapbare taken, wijs ze toe aan teamleden en volg de voortgang in real-time.

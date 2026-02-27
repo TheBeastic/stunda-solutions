@@ -23,7 +23,7 @@ export default function Implementatie() {
                         Dit is de kern van uw transformatie. Gedurende <strong className="text-brand-indigo">80% van de projecttijd</strong> focussen we ons volledig op analyse, configuratie, ontwikkeling en intensieve testcycli.
                     </p>
                     <p className="mb-6">
-                        In plaats van een "big bang" benadering, werken wij iteratief. Via regelmatige sprints leveren we werkende Odoo-modules op, zodat u en uw SPOC direct feedback kunnen geven. Dit elimineert het risico dat het uiteindelijke systeem niet aansluit bij uw dagelijkse operatie.
+                        In plaats van een &quot;big bang&quot; benadering, werken wij iteratief. Via regelmatige sprints leveren we werkende Odoo-modules op, zodat u en uw SPOC direct feedback kunnen geven. Dit elimineert het risico dat het uiteindelijke systeem niet aansluit bij uw dagelijkse operatie.
                     </p>
                     <p className="mb-12">
                         Data-migraties, integraties met systemen van derden en maatwerk oplossingen komen in deze fase samen. U wordt parallel getraind in het gebruik, waardoor de formele trainingstijd later aanzienlijk wordt verkort.

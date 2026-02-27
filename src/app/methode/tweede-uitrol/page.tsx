@@ -20,7 +20,7 @@ export default function TweedeUitrol() {
 
                 <div className="prose prose-lg prose-indigo max-w-none text-brand-indigo/80">
                     <p className="text-xl mb-8 leading-relaxed font-medium">
-                        Na een succesvolle livegang stoppen we niet. De <strong className="text-brand-purple">Tweede Uitrol</strong> richt zich op fasering van secundaire wensen ("nice-to-haves") die opzettelijk buiten de initiële scope zijn gehouden om de eerste time-to-market te versnellen.
+                        Na een succesvolle livegang stoppen we niet. De <strong className="text-brand-purple">Tweede Uitrol</strong> richt zich op fasering van secundaire wensen (&quot;nice-to-haves&quot;) die opzettelijk buiten de initiële scope zijn gehouden om de eerste time-to-market te versnellen.
                     </p>
                     <p className="mb-6">
                         Nu het kernsysteem robuust draait en uw medewerkers getraind zijn, breiden we de functionaliteit uit met complexere modules of geavanceerde automatiseringen. Dit modulaire groeimodel voorkomt projectmoeheid.

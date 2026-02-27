@@ -20,7 +20,7 @@ export default function VoorraadEnWMS() {
 
                 <div className="prose prose-lg prose-indigo max-w-none text-brand-indigo/80">
                     <p className="text-xl mb-8 leading-relaxed font-medium">
-                        Krijg volledige controle over uw toeleveringsketen met Odoo's intelligente <strong className="text-blue-600">Warehouse Management System (WMS)</strong>.
+                        Krijg volledige controle over uw toeleveringsketen met Odoo&apos;s intelligente <strong className="text-blue-600">Warehouse Management System (WMS)</strong>.
                     </p>
                     <p className="mb-6">
                         Minimaliseer handmatige handelingen door processen zoals orderpicken, verpakken en verzenden te optimaliseren. Dankzij real-time tracking weet u altijd precies waar uw voorraad zich bevindt, wat leidt tot minder fouten en een hogere klanttevredenheid.

@@ -23,7 +23,7 @@ export default function HumanResources() {
                         Centraliseer al uw HR-processen en creëer een betere werkplek voor uw medewerkers met de <strong className="text-rose-600">Odoo HR modules</strong>.
                     </p>
                     <p className="mb-6">
-                        Beheer moeiteloos werving, contracten, aanwezigheden, verlofaanvragen en declaraties vanuit één overzichtelijk dashboard. Odoo stroomlijnt de onboarding van nieuwe collega's en zorgt ervoor dat alle documentatie veilig en digitaal is opgeslagen.
+                        Beheer moeiteloos werving, contracten, aanwezigheden, verlofaanvragen en declaraties vanuit één overzichtelijk dashboard. Odoo stroomlijnt de onboarding van nieuwe collega&apos;s en zorgt ervoor dat alle documentatie veilig en digitaal is opgeslagen.
                     </p>
                     <p className="mb-12">
                         Met de self-service portal voor medewerkers kunnen zij zelf hun urenstaten invullen, verlof aanvragen en onkosten indienen. Dit vermindert de administratieve druk op uw HR-afdeling aanzienlijk, zodat zij zich kunnen richten op talentontwikkeling.

@@ -159,16 +159,16 @@ export default function Navbar() {
                         </AnimatePresence>
                     </div>
 
-                    <a href="/#audit" className="text-sm font-semibold text-brand-indigo/80 hover:text-brand-magenta transition-colors">
+                    <Link href="/#audit" className="text-sm font-semibold text-brand-indigo/80 hover:text-brand-magenta transition-colors">
                         Over Ons
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Desktop CTA */}
                 <div className="hidden lg:block relative z-50">
-                    <a href="/#audit" className="px-5 py-2.5 bg-brand-indigo text-white text-sm font-semibold rounded-full hover:bg-brand-indigo/90 shadow-lg shadow-brand-indigo/20 transition-all hover:scale-105 active:scale-95">
+                    <Link href="/#audit" className="px-5 py-2.5 bg-brand-indigo text-white text-sm font-semibold rounded-full hover:bg-brand-indigo/90 shadow-lg shadow-brand-indigo/20 transition-all hover:scale-105 active:scale-95">
                         Gratis Audit
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -227,13 +227,13 @@ export default function Navbar() {
                                 </div>
                             </div>
 
-                            <a href="/#audit" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-brand-indigo">
+                            <Link href="/#audit" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-brand-indigo">
                                 Over Ons
-                            </a>
+                            </Link>
 
-                            <a href="/#audit" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 px-5 py-3 bg-brand-indigo text-white text-center font-semibold rounded-full w-full">
+                            <Link href="/#audit" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 px-5 py-3 bg-brand-indigo text-white text-center font-semibold rounded-full w-full">
                                 Gratis Audit
-                            </a>
+                            </Link>
                         </div>
                     </motion.div>
                 )}

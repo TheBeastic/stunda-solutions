@@ -20,7 +20,7 @@ export default function BusinessIntelligence() {
 
                 <div className="prose prose-lg prose-indigo max-w-none text-brand-indigo/80">
                     <p className="text-xl mb-8 leading-relaxed font-medium">
-                        Transformeer ruwe bedrijfsdata naar heldere, bruikbare inzichten met Odoo's geïntegreerde <strong className="text-violet-600">Dashboards en Rapportages</strong>.
+                        Transformeer ruwe bedrijfsdata naar heldere, bruikbare inzichten met Odoo&apos;s geïntegreerde <strong className="text-violet-600">Dashboards en Rapportages</strong>.
                     </p>
                     <p className="mb-6">
                         Zonder externe BI-tools of complexe koppelingen bouwt u eenvoudig overzichtelijke grafieken, draaitabellen en KPIs die real-time up-to-date zijn. Data uit de modules Verkoop, Financiën, Productie en HR komen naadloos samen in één interface.

@@ -20,13 +20,13 @@ export default function Financien() {
 
                 <div className="prose prose-lg prose-indigo max-w-none text-brand-indigo/80">
                     <p className="text-xl mb-8 leading-relaxed font-medium">
-                        Stroomlijn uw financiële processen met Odoo's naadloos geïntegreerde <strong className="text-emerald-600">boekhouding en facturatiesoftware</strong>.
+                        Stroomlijn uw financiële processen met Odoo&apos;s naadloos geïntegreerde <strong className="text-emerald-600">boekhouding en facturatiesoftware</strong>.
                     </p>
                     <p className="mb-6">
                         Vergeet handmatige invoer en losse spreadsheets. Van bankafschriften die automatisch worden gekoppeld tot UBL-facturatie en onkostenbeheer: Odoo neemt de administratieve last uit handen. Krijg altijd en overal real-time inzicht in uw cashflow.
                     </p>
                     <p className="mb-12">
-                        Met uitgebreide rapportages, multi-valuta ondersteuning en flexibele dashboards neemt u sneller strategische beslissingen. Odoo's boekhouding voldoet volledig aan de strenge eisen van de moderne bedrijfsbesturing.
+                        Met uitgebreide rapportages, multi-valuta ondersteuning en flexibele dashboards neemt u sneller strategische beslissingen. Odoo&apos;s boekhouding voldoet volledig aan de strenge eisen van de moderne bedrijfsbesturing.
                     </p>
                 </div>
 
