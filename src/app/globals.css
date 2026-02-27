@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-indigo: #1E1A4E;
+  --color-brand-magenta: #C000DF;
+  --color-brand-purple: #8E00E5;
+
+  --color-background: #ffffff;
+  --color-foreground: var(--color-brand-indigo);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --background: #ffffff;
+    --foreground: #1E1A4E;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-outfit), var(--font-inter), sans-serif;
+  }
+}
