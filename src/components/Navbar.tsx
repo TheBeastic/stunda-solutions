@@ -27,6 +27,7 @@ const odooModules = [
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+    const [mobileAccordion, setMobileAccordion] = useState<string | null>(null);
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-brand-indigo/10">
@@ -189,51 +190,98 @@ export default function Navbar() {
                         exit={{ opacity: 0, height: 0 }}
                         className="lg:hidden border-t border-brand-indigo/10 bg-white overflow-hidden"
                     >
-                        <div className="px-6 py-6 flex flex-col gap-6">
-                            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-brand-indigo">
+                        <div className="px-6 py-6 flex flex-col gap-2">
+                            <Link href="/" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3">
                                 Home
                             </Link>
-                            <div className="flex flex-col gap-4">
-                                <div className="text-lg font-bold text-brand-indigo/60 border-b border-brand-indigo/5 pb-2">Odoo Modules</div>
-                                <div className="grid grid-cols-1 gap-4 pl-4 border-l-2 border-brand-indigo/10">
-                                    {odooModules.map((item) => (
-                                        <Link
-                                            key={item.name}
-                                            href={item.href}
-                                            onClick={() => setIsMobileMenuOpen(false)}
-                                            className="text-base font-semibold text-brand-indigo flex items-center gap-3"
+
+                            {/* Odoo Modules Accordion */}
+                            <div className="border-t border-brand-indigo/5">
+                                <button
+                                    onClick={() => setMobileAccordion(mobileAccordion === "modules" ? null : "modules")}
+                                    className="flex items-center justify-between w-full py-3 text-lg font-bold text-brand-indigo"
+                                >
+                                    Odoo Modules
+                                    <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileAccordion === "modules" ? "rotate-180 text-brand-magenta" : "text-brand-indigo/40"}`} />
+                                </button>
+                                <AnimatePresence>
+                                    {mobileAccordion === "modules" && (
+                                        <motion.div
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: "auto" }}
+                                            exit={{ opacity: 0, height: 0 }}
+                                            transition={{ duration: 0.25, ease: "easeInOut" }}
+                                            className="overflow-hidden"
                                         >
-                                            <item.icon className="w-4 h-4 text-brand-magenta" />
-                                            {item.name}
-                                        </Link>
-                                    ))}
-                                </div>
+                                            <div className="pb-3 pl-2 flex flex-col gap-1">
+                                                {odooModules.map((item) => (
+                                                    <Link
+                                                        key={item.name}
+                                                        href={item.href}
+                                                        onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }}
+                                                        className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-brand-indigo hover:bg-brand-indigo/5 transition-colors"
+                                                    >
+                                                        <item.icon className="w-4 h-4 text-brand-magenta flex-shrink-0" />
+                                                        <div>
+                                                            <span className="text-sm font-semibold">{item.name}</span>
+                                                            <p className="text-xs text-brand-indigo/50">{item.desc}</p>
+                                                        </div>
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                             </div>
 
-                            <div className="flex flex-col gap-4">
-                                <div className="text-lg font-bold text-brand-indigo/60 border-b border-brand-indigo/5 pb-2">Onze Methode</div>
-                                <div className="grid grid-cols-1 gap-4 pl-4 border-l-2 border-brand-indigo/10">
-                                    {methodeItems.map((item) => (
-                                        <Link
-                                            key={item.name}
-                                            href={item.href}
-                                            onClick={() => setIsMobileMenuOpen(false)}
-                                            className="text-base font-semibold text-brand-indigo flex items-center gap-3"
+                            {/* Onze Methode Accordion */}
+                            <div className="border-t border-brand-indigo/5">
+                                <button
+                                    onClick={() => setMobileAccordion(mobileAccordion === "methode" ? null : "methode")}
+                                    className="flex items-center justify-between w-full py-3 text-lg font-bold text-brand-indigo"
+                                >
+                                    Onze Methode
+                                    <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileAccordion === "methode" ? "rotate-180 text-brand-magenta" : "text-brand-indigo/40"}`} />
+                                </button>
+                                <AnimatePresence>
+                                    {mobileAccordion === "methode" && (
+                                        <motion.div
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: "auto" }}
+                                            exit={{ opacity: 0, height: 0 }}
+                                            transition={{ duration: 0.25, ease: "easeInOut" }}
+                                            className="overflow-hidden"
                                         >
-                                            <item.icon className="w-4 h-4 text-brand-magenta" />
-                                            {item.name}
-                                        </Link>
-                                    ))}
-                                </div>
+                                            <div className="pb-3 pl-2 flex flex-col gap-1">
+                                                {methodeItems.map((item) => (
+                                                    <Link
+                                                        key={item.name}
+                                                        href={item.href}
+                                                        onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }}
+                                                        className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-brand-indigo hover:bg-brand-indigo/5 transition-colors"
+                                                    >
+                                                        <item.icon className="w-4 h-4 text-brand-magenta flex-shrink-0" />
+                                                        <div>
+                                                            <span className="text-sm font-semibold">{item.name}</span>
+                                                            <p className="text-xs text-brand-indigo/50">{item.desc}</p>
+                                                        </div>
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                             </div>
 
-                            <Link href="/#audit" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-brand-indigo">
-                                Over Ons
-                            </Link>
+                            <div className="border-t border-brand-indigo/5 pt-2 flex flex-col gap-2">
+                                <Link href="/#audit" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3">
+                                    Over Ons
+                                </Link>
 
-                            <Link href="/#audit" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 px-5 py-3 bg-brand-indigo text-white text-center font-semibold rounded-full w-full">
-                                Gratis Audit
-                            </Link>
+                                <Link href="/#audit" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="mt-2 px-5 py-3 bg-brand-indigo text-white text-center font-semibold rounded-full w-full">
+                                    Gratis Audit
+                                </Link>
+                            </div>
                         </div>
                     </motion.div>
                 )}
