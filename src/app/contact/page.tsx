@@ -1,5 +1,6 @@
 import LeadGenForm from "@/components/LeadGenForm";
 import { Phone, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 export default function ContactPage() {
     return (
@@ -21,7 +22,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
                     {/* LinkedIn Card */}
                     <a
-                        href="https://www.linkedin.com/company/stunda-solutions/"
+                        href="https://www.linkedin.com/company/stundasolutions/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group bg-white rounded-3xl p-10 border border-brand-indigo/10 shadow-xl hover:shadow-2xl hover:border-brand-magenta/30 transition-all duration-300 flex flex-col items-center justify-center text-center interactive-card"
@@ -56,6 +57,37 @@ export default function ContactPage() {
                             0469 73 29 33
                         </span>
                     </a>
+                </div>
+
+                {/* Personal Section: Arda Yatmaz */}
+                <div className="max-w-4xl mx-auto mb-20 bg-white border border-brand-indigo/10 rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-brand-magenta/5 blur-3xl rounded-full pointer-events-none" />
+
+                    <div className="flex flex-col md:flex-row items-center gap-8 relative z-10">
+                        <div className="w-32 h-32 md:w-40 md:h-40 relative flex-shrink-0 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                            <Image
+                                src="/media/arda.png"
+                                alt="Arda Yatmaz"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                        <div className="text-center md:text-left flex-1">
+                            <h3 className="text-2xl font-bold text-brand-indigo mb-1">Arda Yatmaz</h3>
+                            <p className="text-brand-magenta font-semibold mb-4">Founder & Odoo Expert</p>
+                            <p className="text-brand-indigo/70 leading-relaxed mb-6 max-w-lg">
+                                Gedreven om bedrijfsprocessen te optimaliseren en complexe uitdagingen te vertalen naar naadloze ERP-oplossingen. Bij Stunda Solutions ligt mijn focus op het bouwen van systemen die meegroeien met uw ambitie.
+                            </p>
+                            <a
+                                href="https://www.linkedin.com/in/arda-yatmaz-67a02328a"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-2.5 bg-brand-indigo text-white font-medium rounded-full hover:bg-brand-indigo/90 transition-all font-semibold"
+                            >
+                                Connecteer met mij <Linkedin className="w-4 h-4" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="max-w-4xl mx-auto text-center mb-8">
