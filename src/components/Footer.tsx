@@ -53,7 +53,7 @@ export default function Footer() {
                                 </div>
                                 <span>info@stunda.be</span>
                             </a>
-                            <a href="https://www.linkedin.com/company/stunda-solutions/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/80 hover:text-brand-magenta transition-colors group">
+                            <a href="https://www.linkedin.com/in/arda-yatmaz-67a02328a" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/80 hover:text-brand-magenta transition-colors group">
                                 <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-brand-magenta/20 transition-colors">
                                     <Linkedin className="w-4 h-4" />
                                 </div>

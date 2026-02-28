@@ -90,7 +90,7 @@ export default function ContactPage() {
                     </div>
                 </div>
 
-                {/* Google Maps — Limburg, België */}
+                {/* Google Maps - Limburg, België */}
                 <div className="max-w-4xl mx-auto mb-20">
                     <h2 className="text-2xl font-bold text-brand-indigo mb-6 text-center">Onze Regio</h2>
                     <div className="rounded-3xl overflow-hidden border border-brand-indigo/10 shadow-xl">
@@ -102,7 +102,7 @@ export default function ContactPage() {
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            title="Stunda Solutions regio — Limburg, België"
+                            title="Stunda Solutions regio - Limburg, België"
                         />
                     </div>
                     <p className="text-center text-brand-indigo/50 text-sm mt-4">

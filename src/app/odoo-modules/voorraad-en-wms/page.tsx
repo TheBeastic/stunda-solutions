@@ -86,7 +86,7 @@ export default function VoorraadEnWMS() {
                         Odoo WMS ondersteunt geavanceerde pickstrategieën zoals wave picking, batch picking en zone-gebaseerd picken. Dit betekent dat uw magazijn schaalt met uw bedrijf, of u nu 100 of 100.000 SKU&apos;s beheert.
                     </p>
                     <p>
-                        Dankzij de naadloze integratie met modules zoals Verkoop, Inkoop en Productie stroomt data automatisch door uw gehele supply chain. Geen dubbele invoer, geen handmatige reconciliatie—alles is real-time gesynchroniseerd.
+                        Dankzij de naadloze integratie met modules zoals Verkoop, Inkoop en Productie stroomt data automatisch door uw gehele supply chain. Geen dubbele invoer, geen handmatige reconciliatie. Alles is real-time gesynchroniseerd.
                     </p>
                 </div>
 

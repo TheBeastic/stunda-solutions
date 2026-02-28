@@ -87,7 +87,7 @@ export default function OdooSolutionsGrid() {
                         Odoo ERP Modules voor Elke Bedrijfsbehoefte
                     </h2>
                     <p className="text-lg text-brand-indigo/60 max-w-2xl mx-auto">
-                        Ervaar de kracht van een volledig geïntegreerd ERP-systeem. Stunda Solutions stemt elke Odoo module perfect af op uw specifieke operationele workflows — van voorraadbeheer en boekhouding tot CRM en business intelligence.
+                        Ervaar de kracht van een volledig geïntegreerd ERP-systeem. Stunda Solutions stemt elke Odoo module perfect af op uw specifieke operationele workflows: van voorraadbeheer en boekhouding tot CRM en business intelligence.
                     </p>
                 </div>
 

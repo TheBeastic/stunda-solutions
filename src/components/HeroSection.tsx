@@ -38,7 +38,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className="text-lg md:text-xl text-brand-indigo/70 max-w-2xl mb-12"
                 >
-                    Transformeer uw activiteiten met een razendsnelle, overzichtelijke ERP-opzet. Van procesanalyse en ROI-berekening tot implementatie en doorlopende ondersteuning — Stunda Solutions bouwt mee aan schaalbare groei voor KMO&apos;s in Vlaanderen en Nederland.
+                    Transformeer uw activiteiten met een razendsnelle, overzichtelijke ERP-opzet. Van procesanalyse en ROI-berekening tot implementatie en doorlopende ondersteuning. Stunda Solutions bouwt mee aan schaalbare groei voor KMO&apos;s in Vlaanderen en Nederland.
                 </motion.p>
 
                 <motion.div

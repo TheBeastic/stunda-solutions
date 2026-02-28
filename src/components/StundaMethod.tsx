@@ -62,7 +62,7 @@ export default function StundaMethod() {
                         transition={{ delay: 0.2 }}
                         className="text-lg text-white/70 max-w-2xl mx-auto"
                     >
-                        Ons beproefde vierfasenproces garandeert een naadloze overgang naar operationele excellentie. Van initiële procesanalyse tot doorlopende ondersteuning — zonder downtime of productiviteitsverlies.
+                        Ons beproefde vierfasenproces garandeert een naadloze overgang naar operationele excellentie. Van initiële procesanalyse tot doorlopende ondersteuning, zonder downtime of productiviteitsverlies.
                     </motion.p>
                 </div>
 
