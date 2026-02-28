@@ -32,7 +32,7 @@ export default function HumanResources() {
                 <div className="rounded-2xl overflow-hidden border border-rose-200/50 shadow-lg mb-16">
                     <Image
                         src="/media/hr-job-applicaties.png"
-                        alt="Odoo HR Job Applicaties Kanban Board"
+                        alt="Odoo HR sollicitatie proces kanban board voor personeelsbeheer"
                         width={1024}
                         height={480}
                         className="w-full h-auto"
@@ -72,7 +72,7 @@ export default function HumanResources() {
                 <div className="rounded-2xl overflow-hidden border border-brand-indigo/10 shadow-lg mb-16">
                     <Image
                         src="/media/hr-vacatures.png"
-                        alt="Openstaande Vacatures per Departement en Jobs"
+                        alt="Odoo HR openstaande vacatures overzicht per afdeling en functie"
                         width={1024}
                         height={520}
                         className="w-full h-auto"

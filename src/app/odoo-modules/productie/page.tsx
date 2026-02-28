@@ -32,7 +32,7 @@ export default function Productie() {
                 <div className="rounded-2xl overflow-hidden border border-purple-200/50 shadow-lg mb-16">
                     <Image
                         src="/media/productie-planning.png"
-                        alt="Odoo Work Orders Planning Dashboard"
+                        alt="Odoo MRP werkorder planning en productiebeheer dashboard"
                         width={1024}
                         height={520}
                         className="w-full h-auto"

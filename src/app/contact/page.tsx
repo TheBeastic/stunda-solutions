@@ -15,7 +15,7 @@ export default function ContactPage() {
                         Neem <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-magenta to-brand-purple">Contact</span> Op
                     </h1>
                     <p className="text-lg text-brand-indigo/70 leading-relaxed max-w-2xl mx-auto">
-                        Klaar om uw bedrijfsprocessen te automatiseren? Wij staan klaar om naar uw wensen te luisteren en de perfecte Odoo ERP oplossing te realiseren. Bereik ons direct via telefoon of LinkedIn.
+                        Klaar om uw bedrijfsprocessen te automatiseren? Als Odoo ERP implementatie partner in Vlaanderen en België staan wij klaar om de perfecte oplossing voor uw organisatie te realiseren.
                     </p>
                 </div>
 
@@ -67,7 +67,7 @@ export default function ContactPage() {
                         <div className="w-32 h-32 md:w-40 md:h-40 relative flex-shrink-0 rounded-full overflow-hidden border-4 border-white shadow-xl">
                             <Image
                                 src="/media/arda.png"
-                                alt="Arda Yatmaz"
+                                alt="Arda Yatmaz - Founder Stunda Solutions Odoo ERP Consultant"
                                 fill
                                 className="object-cover"
                             />

@@ -73,7 +73,7 @@ export default function VoorraadEnWMS() {
                     <div className="rounded-2xl overflow-hidden border border-blue-200/50 shadow-lg max-w-sm">
                         <Image
                             src="/media/barcode-app.png"
-                            alt="Odoo Barcode Scanning App"
+                            alt="Odoo Barcode Scanning App voor magazijnbeheer en voorraadbeheer"
                             width={400}
                             height={650}
                             className="w-full h-auto"
@@ -94,17 +94,17 @@ export default function VoorraadEnWMS() {
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Picking Strategie&euml;n</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                     <div className="bg-white rounded-2xl border border-brand-indigo/5 p-6 text-center shadow-sm">
-                        <Image src="/media/picking-pack.png" alt="Pack picking strategie" width={300} height={300} className="w-full h-auto mb-4" />
+                        <Image src="/media/picking-pack.png" alt="Odoo WMS Pack picking strategie voor magazijnoptimalisatie" width={300} height={300} className="w-full h-auto mb-4" />
                         <h3 className="text-lg font-bold text-brand-indigo">Pack</h3>
                         <p className="text-brand-indigo/60 text-sm">Verzamel items per order en verpak ze direct.</p>
                     </div>
                     <div className="bg-white rounded-2xl border border-brand-indigo/5 p-6 text-center shadow-sm">
-                        <Image src="/media/picking-packed.png" alt="Packed picking strategie" width={300} height={300} className="w-full h-auto mb-4" />
+                        <Image src="/media/picking-packed.png" alt="Odoo WMS Batch picking strategie voor efficiënte orderverzameling" width={300} height={300} className="w-full h-auto mb-4" />
                         <h3 className="text-lg font-bold text-brand-indigo">Batch Picking</h3>
                         <p className="text-brand-indigo/60 text-sm">Combineer meerdere orders voor effici&euml;nter picken.</p>
                     </div>
                     <div className="bg-white rounded-2xl border border-brand-indigo/5 p-6 text-center shadow-sm">
-                        <Image src="/media/picking-cluster.png" alt="Cluster picking strategie" width={300} height={300} className="w-full h-auto mb-4" />
+                        <Image src="/media/picking-cluster.png" alt="Odoo WMS Cluster picking strategie voor meervoudige orderverzameling" width={300} height={300} className="w-full h-auto mb-4" />
                         <h3 className="text-lg font-bold text-brand-indigo">Cluster Picking</h3>
                         <p className="text-brand-indigo/60 text-sm">Sorteer en verdeel items over meerdere orders tegelijk.</p>
                     </div>

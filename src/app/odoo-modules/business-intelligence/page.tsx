@@ -32,7 +32,7 @@ export default function BusinessIntelligence() {
                 <div className="rounded-2xl overflow-hidden border border-violet-200/50 shadow-lg mb-16">
                     <Image
                         src="/media/bi-dashboard.png"
-                        alt="Odoo Business Intelligence Expenses Dashboard"
+                        alt="Odoo Business Intelligence onkosten analyse dashboard met grafieken"
                         width={1024}
                         height={520}
                         className="w-full h-auto"
@@ -72,7 +72,7 @@ export default function BusinessIntelligence() {
                 <div className="rounded-2xl overflow-hidden border border-brand-indigo/10 shadow-lg mb-16">
                     <Image
                         src="/media/cross-module-rapportage.png"
-                        alt="Cross-module rapportage dashboard met Sales, CRM, Finance en Logistics"
+                        alt="Odoo cross-module rapportage dashboard met Sales CRM Finance en Logistics data"
                         width={1024}
                         height={520}
                         className="w-full h-auto"

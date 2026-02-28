@@ -33,8 +33,11 @@ export default function Footer() {
                         <Link href="/" className="text-3xl font-bold tracking-tight text-white mb-6 inline-block">
                             STUNDA<span className="text-brand-magenta">.</span>
                         </Link>
-                        <p className="text-white/70 leading-relaxed mb-8 max-w-sm">
+                        <p className="text-white/70 leading-relaxed mb-4 max-w-sm">
                             Premium IT-consultancybedrijf gespecialiseerd in razendsnelle, succesvolle Odoo ERP implementaties. Ontgrendel uw volledige zakelijke potentieel.
+                        </p>
+                        <p className="text-white/50 text-sm mb-8 max-w-sm">
+                            Uw Odoo ERP implementatie partner in Vlaanderen, Limburg en heel België. Ook actief in Nederland.
                         </p>
 
                         <div className="space-y-4">
