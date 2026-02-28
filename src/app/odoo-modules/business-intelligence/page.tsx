@@ -2,6 +2,7 @@
 
 import { LineChart, ChevronRight, PieChart, Database, Sparkles, LayoutDashboard } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const features = [
     { icon: LayoutDashboard, title: "Custom Dashboards", desc: "Bouw op maat gemaakte dashboards met drag-and-drop. Combineer grafieken, KPIs en tabellen in \u00e9\u00e9n overzicht." },
@@ -62,9 +63,14 @@ export default function BusinessIntelligence() {
                     </p>
                 </div>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-violet-500/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <PieChart className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van cross-module rapportage en KPIs</p>
+                <div className="rounded-2xl overflow-hidden border border-brand-indigo/10 shadow-lg mb-16">
+                    <Image
+                        src="/media/cross-module-rapportage.png"
+                        alt="Cross-module rapportage dashboard met Sales, CRM, Finance en Logistics"
+                        width={1024}
+                        height={520}
+                        className="w-full h-auto"
+                    />
                 </div>
 
                 <div className="bg-gradient-to-r from-violet-600 to-brand-indigo rounded-2xl p-8 md:p-12 text-center text-white mb-16">

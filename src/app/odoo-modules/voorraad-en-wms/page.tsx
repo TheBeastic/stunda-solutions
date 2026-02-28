@@ -2,6 +2,7 @@
 
 import { Boxes, ChevronRight, BarChart3, Zap, ScanLine, PackageCheck } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const features = [
     { icon: ScanLine, title: "Barcode Scanning", desc: "Scan producten, locaties en verzendlabels met mobiele apparaten voor razendsnelle magazijnoperaties." },
@@ -30,10 +31,16 @@ export default function VoorraadEnWMS() {
                     Krijg volledige controle over uw toeleveringsketen met Odoo&apos;s intelligente <strong className="text-blue-600">Warehouse Management System (WMS)</strong>. Van ontvangst tot verzending, elk proces wordt gestroomlijnd.
                 </p>
 
-                {/* Image Placeholder 1 */}
-                <div className="rounded-2xl bg-gradient-to-br from-blue-500/10 via-brand-indigo/5 to-transparent border border-blue-200/50 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Boxes className="w-16 h-16 text-blue-500/40 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Screenshot van het Voorraad &amp; WMS Dashboard</p>
+                {/* Voorraad Dashboard Screenshot */}
+                <div className="rounded-2xl overflow-hidden border border-blue-200/50 shadow-lg mb-16">
+                    <Image
+                        src="/media/voorraad-dashboard.png"
+                        alt="Odoo Voorraad Dashboard met voorraadvoorspelling en replenishment"
+                        width={1024}
+                        height={700}
+                        className="w-full h-auto"
+                        priority
+                    />
                 </div>
 
                 {/* Features Grid */}
@@ -67,10 +74,24 @@ export default function VoorraadEnWMS() {
                     </p>
                 </div>
 
-                {/* Image Placeholder 2 */}
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-blue-500/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <ScanLine className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van barcode scanning workflow</p>
+                {/* Picking Strategies */}
+                <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Picking Strategie&euml;n</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                    <div className="bg-white rounded-2xl border border-brand-indigo/5 p-6 text-center shadow-sm">
+                        <Image src="/media/picking-pack.png" alt="Pack picking strategie" width={300} height={300} className="w-full h-auto mb-4" />
+                        <h3 className="text-lg font-bold text-brand-indigo">Pack</h3>
+                        <p className="text-brand-indigo/60 text-sm">Verzamel items per order en verpak ze direct.</p>
+                    </div>
+                    <div className="bg-white rounded-2xl border border-brand-indigo/5 p-6 text-center shadow-sm">
+                        <Image src="/media/picking-packed.png" alt="Packed picking strategie" width={300} height={300} className="w-full h-auto mb-4" />
+                        <h3 className="text-lg font-bold text-brand-indigo">Batch Picking</h3>
+                        <p className="text-brand-indigo/60 text-sm">Combineer meerdere orders voor effici&euml;nter picken.</p>
+                    </div>
+                    <div className="bg-white rounded-2xl border border-brand-indigo/5 p-6 text-center shadow-sm">
+                        <Image src="/media/picking-cluster.png" alt="Cluster picking strategie" width={300} height={300} className="w-full h-auto mb-4" />
+                        <h3 className="text-lg font-bold text-brand-indigo">Cluster Picking</h3>
+                        <p className="text-brand-indigo/60 text-sm">Sorteer en verdeel items over meerdere orders tegelijk.</p>
+                    </div>
                 </div>
 
                 {/* CTA Section */}
