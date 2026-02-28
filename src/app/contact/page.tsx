@@ -22,7 +22,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
                     {/* LinkedIn Card */}
                     <a
-                        href="https://www.linkedin.com/company/stundasolutions/"
+                        href="https://www.linkedin.com/company/stunda-solutions/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group bg-white rounded-3xl p-10 border border-brand-indigo/10 shadow-xl hover:shadow-2xl hover:border-brand-magenta/30 transition-all duration-300 flex flex-col items-center justify-center text-center interactive-card"
