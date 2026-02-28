@@ -28,9 +28,17 @@ export default function CRMEnVerkoop() {
                     Beheer uw verkooppijplijn van lead tot deal met Odoo&apos;s krachtige <strong className="text-sky-600">CRM- en verkoopmodule</strong>. Sluit meer deals, sneller.
                 </p>
 
-                <div className="rounded-2xl bg-gradient-to-br from-sky-500/10 via-brand-indigo/5 to-transparent border border-sky-200/50 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Users className="w-16 h-16 text-sky-500/40 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Screenshot van het CRM Pipeline Dashboard</p>
+                {/* CRM Demo Video */}
+                <div className="rounded-2xl overflow-hidden border border-sky-200/50 shadow-lg mb-16">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-auto"
+                    >
+                        <source src="/media/video_crm.webm" type="video/webm" />
+                    </video>
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Belangrijkste Functionaliteiten</h2>

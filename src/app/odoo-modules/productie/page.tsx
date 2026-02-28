@@ -2,6 +2,7 @@
 
 import { Wrench, ChevronRight, Cog, ClipboardCheck, Timer, Layers } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const features = [
     { icon: Layers, title: "Stuklijsten (BOM)", desc: "Definieer multi-level stuklijsten met varianten, bijproducten en subcontractering voor complexe productieprocessen." },
@@ -28,9 +29,15 @@ export default function Productie() {
                     Plan, beheer en optimaliseer uw gehele productieproces met krachtige <strong className="text-brand-purple">MRP-functionaliteiten van Odoo</strong>. Van grondstof tot eindproduct.
                 </p>
 
-                <div className="rounded-2xl bg-gradient-to-br from-purple-500/10 via-brand-indigo/5 to-transparent border border-purple-200/50 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Wrench className="w-16 h-16 text-purple-500/40 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Screenshot van het Productie Planning Dashboard</p>
+                <div className="rounded-2xl overflow-hidden border border-purple-200/50 shadow-lg mb-16">
+                    <Image
+                        src="/media/productie-planning.png"
+                        alt="Odoo Work Orders Planning Dashboard"
+                        width={1024}
+                        height={520}
+                        className="w-full h-auto"
+                        priority
+                    />
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Belangrijkste Functionaliteiten</h2>

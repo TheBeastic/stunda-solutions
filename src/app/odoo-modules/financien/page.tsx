@@ -28,10 +28,18 @@ export default function Financien() {
                     Stroomlijn uw financi&euml;le processen met Odoo&apos;s naadloos ge&iuml;ntegreerde <strong className="text-emerald-600">boekhouding en facturatiesoftware</strong>. Van dagboeken tot jaarrekeningen, alles in &eacute;&eacute;n systeem.
                 </p>
 
-                {/* Image Placeholder 1 */}
-                <div className="rounded-2xl bg-gradient-to-br from-emerald-500/10 via-brand-indigo/5 to-transparent border border-emerald-200/50 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <CircleDollarSign className="w-16 h-16 text-emerald-500/40 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Screenshot van het Financi&euml;le Dashboard</p>
+                {/* Accounting Demo Video */}
+                <div className="rounded-2xl overflow-hidden border border-emerald-200/50 shadow-lg mb-16">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-auto"
+                    >
+                        <source src="/media/video_accounting.webm" type="video/webm" />
+                        <source src="/media/video_accounting.mp4" type="video/mp4" />
+                    </video>
                 </div>
 
                 {/* Features Grid */}
