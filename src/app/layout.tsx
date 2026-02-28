@@ -92,7 +92,7 @@ const jsonLd = {
         url: "https://www.linkedin.com/in/arda-yatmaz-67a02328a",
       },
       sameAs: [
-        "https://www.linkedin.com/company/stunda-solutions/",
+        "https://www.linkedin.com/company/stundasolutions/",
       ],
       priceRange: "$$",
       hasOfferCatalog: {
