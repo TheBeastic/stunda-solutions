@@ -103,12 +103,18 @@ export default function Footer() {
                     <p className="text-white/40 text-sm text-center md:text-left">
                         &copy; {new Date().getFullYear()} Stunda Solutions. Alle rechten voorbehouden.
                     </p>
-                    <div className="flex gap-6 text-sm">
+                    <div className="flex flex-wrap gap-6 text-sm">
                         <Link href="/contact" className="text-white/40 hover:text-white transition-colors">
                             Contact
                         </Link>
                         <Link href="/#audit" className="text-white/40 hover:text-white transition-colors">
                             Gratis Audit
+                        </Link>
+                        <Link href="/privacy" className="text-white/40 hover:text-white transition-colors">
+                            Privacybeleid
+                        </Link>
+                        <Link href="/voorwaarden" className="text-white/40 hover:text-white transition-colors">
+                            Algemene Voorwaarden
                         </Link>
                     </div>
                 </div>

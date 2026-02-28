@@ -95,6 +95,49 @@ const jsonLd = {
         "https://www.linkedin.com/company/stunda-solutions/",
       ],
       priceRange: "$$",
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Odoo ERP Diensten",
+        itemListElement: [
+          {
+            "@type": "Service",
+            name: "Odoo ERP Implementatie",
+            description: "Volledige Odoo ERP implementatie van procesanalyse tot go-live, inclusief configuratie, data-migratie en maatwerk.",
+            url: "https://stunda.be/methode/implementatie",
+            provider: { "@id": "https://stunda.be/#organization" },
+          },
+          {
+            "@type": "Service",
+            name: "Odoo Voorraad & WMS",
+            description: "Warehouse management met barcode scanning, picking strategieën en real-time voorraadbeheer.",
+            url: "https://stunda.be/odoo-modules/voorraad-en-wms",
+          },
+          {
+            "@type": "Service",
+            name: "Odoo Financiën & Boekhouding",
+            description: "Geautomatiseerde boekhouding met bankkoppelingen, facturatie, BTW-aangiften en financiële rapportages.",
+            url: "https://stunda.be/odoo-modules/financien",
+          },
+          {
+            "@type": "Service",
+            name: "Odoo CRM & Verkoop",
+            description: "Lead management, verkooppijplijn, offertes en forecasting in één geïntegreerd CRM-systeem.",
+            url: "https://stunda.be/odoo-modules/crm-en-verkoop",
+          },
+          {
+            "@type": "Service",
+            name: "Odoo Productie (MRP)",
+            description: "Manufacturing Resource Planning met werkorders, stuklijsten en kwaliteitscontrole.",
+            url: "https://stunda.be/odoo-modules/productie",
+          },
+          {
+            "@type": "Service",
+            name: "Odoo ROI Analyse",
+            description: "Gratis procesanalyse en ROI-berekening per Odoo module voor meetbare investeringsbeslissingen.",
+            url: "https://stunda.be/methode/roi-analyse",
+          },
+        ],
+      },
     },
     {
       "@type": "WebSite",
@@ -103,6 +146,45 @@ const jsonLd = {
       name: "Stunda Solutions",
       publisher: { "@id": "https://stunda.be/#organization" },
       inLanguage: "nl",
+      dateModified: new Date().toISOString().split("T")[0],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://stunda.be/#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wat doet Stunda Solutions?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Stunda Solutions is een premium Odoo ERP implementatie partner in België. Wij helpen KMO's hun bedrijfsprocessen te optimaliseren met Odoo modules voor voorraadbeheer, boekhouding, CRM, productie, HR en business intelligence.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "In welke regio is Stunda Solutions actief?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Stunda Solutions is gevestigd in Limburg, Vlaanderen en bedient klanten in heel België en Nederland.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hoe verloopt een Odoo ERP implementatie bij Stunda Solutions?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Onze bewezen methode bestaat uit 6 fasen: ROI Analyse, Project Kick-off, Implementatie, Go-Live, Tweede Uitrol en Voortgangsrapport. Elke fase wordt begeleid door een dedicated SPOC.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Biedt Stunda Solutions een gratis audit aan?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja, Stunda Solutions biedt een gratis Odoo Readiness Audit aan. Hierbij analyseren wij uw huidige bedrijfsprocessen en berekenen we de verwachte ROI per Odoo module.",
+          },
+        },
+      ],
     },
   ],
 };
@@ -125,9 +207,9 @@ export default function RootLayout({
         className={`${outfit.variable} ${inter.variable} antialiased flex flex-col min-h-screen`}
       >
         <Navbar />
-        <main className="flex-grow">
+        <div className="flex-grow">
           {children}
-        </main>
+        </div>
         <Footer />
       </body>
     </html>
