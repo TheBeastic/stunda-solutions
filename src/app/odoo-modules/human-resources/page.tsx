@@ -2,6 +2,7 @@
 
 import { HeartHandshake, ChevronRight, UserPlus, CalendarDays, Award, FileText } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const features = [
     { icon: UserPlus, title: "Werving & Selectie", desc: "Beheer vacatures, sollicitanten en het volledige wervingsproces. Van publicatie tot aanname, alles in \u00e9\u00e9n systeem." },
@@ -28,9 +29,15 @@ export default function HumanResources() {
                     Centraliseer al uw HR-processen en cre&euml;er een betere werkplek voor uw medewerkers met de <strong className="text-rose-600">Odoo HR modules</strong>.
                 </p>
 
-                <div className="rounded-2xl bg-gradient-to-br from-rose-500/10 via-brand-indigo/5 to-transparent border border-rose-200/50 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <HeartHandshake className="w-16 h-16 text-rose-500/40 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Screenshot van het HR Dashboard</p>
+                <div className="rounded-2xl overflow-hidden border border-rose-200/50 shadow-lg mb-16">
+                    <Image
+                        src="/media/hr-job-applicaties.png"
+                        alt="Odoo HR Job Applicaties Kanban Board"
+                        width={1024}
+                        height={480}
+                        className="w-full h-auto"
+                        priority
+                    />
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Belangrijkste Functionaliteiten</h2>
@@ -62,9 +69,14 @@ export default function HumanResources() {
                     </p>
                 </div>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-rose-500/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <UserPlus className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van het wervings- en onboardingproces</p>
+                <div className="rounded-2xl overflow-hidden border border-brand-indigo/10 shadow-lg mb-16">
+                    <Image
+                        src="/media/hr-vacatures.png"
+                        alt="Openstaande Vacatures per Departement en Jobs"
+                        width={1024}
+                        height={520}
+                        className="w-full h-auto"
+                    />
                 </div>
 
                 <div className="bg-gradient-to-r from-rose-600 to-brand-indigo rounded-2xl p-8 md:p-12 text-center text-white mb-16">

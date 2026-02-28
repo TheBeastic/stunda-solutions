@@ -29,9 +29,15 @@ export default function BusinessIntelligence() {
                     Transformeer ruwe bedrijfsdata naar heldere, bruikbare inzichten met Odoo&apos;s ge&iuml;ntegreerde <strong className="text-violet-600">Dashboards en Rapportages</strong>.
                 </p>
 
-                <div className="rounded-2xl bg-gradient-to-br from-violet-500/10 via-brand-indigo/5 to-transparent border border-violet-200/50 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <LineChart className="w-16 h-16 text-violet-500/40 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Screenshot van het Business Intelligence Dashboard</p>
+                <div className="rounded-2xl overflow-hidden border border-violet-200/50 shadow-lg mb-16">
+                    <Image
+                        src="/media/bi-dashboard.png"
+                        alt="Odoo Business Intelligence Expenses Dashboard"
+                        width={1024}
+                        height={520}
+                        className="w-full h-auto"
+                        priority
+                    />
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Belangrijkste Functionaliteiten</h2>

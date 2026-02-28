@@ -28,9 +28,18 @@ export default function ProjectManagement() {
                     Organiseer, plan en voltooi uw projecten op tijd en binnen budget met Odoo&apos;s intu&iuml;tieve <strong className="text-orange-600">Project Management software</strong>.
                 </p>
 
-                <div className="rounded-2xl bg-gradient-to-br from-orange-500/10 via-brand-indigo/5 to-transparent border border-orange-200/50 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Briefcase className="w-16 h-16 text-orange-500/40 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Screenshot van het Project Kanban Board</p>
+                {/* Project Management Demo Video */}
+                <div className="rounded-2xl overflow-hidden border border-orange-200/50 shadow-lg mb-16">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-auto"
+                    >
+                        <source src="/media/video_project.webm" type="video/webm" />
+                        <source src="/media/video_project.mp4" type="video/mp4" />
+                    </video>
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Belangrijkste Functionaliteiten</h2>
@@ -62,9 +71,9 @@ export default function ProjectManagement() {
                     </p>
                 </div>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-orange-500/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <KanbanSquare className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van Gantt-chart voor projectplanning</p>
+                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-orange-500/5 to-transparent border border-brand-indigo/10 p-8 md:p-12 flex flex-col items-center justify-center text-center mb-16">
+                    <KanbanSquare className="w-12 h-12 text-brand-indigo/20 mb-3" />
+                    <p className="text-brand-indigo/40 font-medium text-sm">Gantt-chart en tijdlijn planning beschikbaar in alle projecten</p>
                 </div>
 
                 <div className="bg-gradient-to-r from-orange-600 to-brand-indigo rounded-2xl p-8 md:p-12 text-center text-white mb-16">

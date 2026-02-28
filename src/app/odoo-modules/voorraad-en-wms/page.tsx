@@ -66,6 +66,22 @@ export default function VoorraadEnWMS() {
                     <p className="mb-6">
                         Geautomatiseerde bestellingen zorgen ervoor dat u nooit zonder kritieke producten komt te zitten. Door integraties met scanners en mobiele apparaten werkt uw magazijnpersoneel sneller en effici&euml;nter dan ooit tevoren.
                     </p>
+                </div>
+
+                {/* Barcode App Screenshot */}
+                <div className="flex justify-center mb-16">
+                    <div className="rounded-2xl overflow-hidden border border-blue-200/50 shadow-lg max-w-sm">
+                        <Image
+                            src="/media/barcode-app.png"
+                            alt="Odoo Barcode Scanning App"
+                            width={400}
+                            height={650}
+                            className="w-full h-auto"
+                        />
+                    </div>
+                </div>
+
+                <div className="prose prose-lg prose-indigo max-w-none text-brand-indigo/80 mb-16">
                     <p className="mb-6">
                         Odoo WMS ondersteunt geavanceerde pickstrategieën zoals wave picking, batch picking en zone-gebaseerd picken. Dit betekent dat uw magazijn schaalt met uw bedrijf, of u nu 100 of 100.000 SKU&apos;s beheert.
                     </p>
