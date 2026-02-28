@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Linkedin, Phone, Mail, ArrowRight } from "lucide-react";
 
 const odooModules = [
@@ -30,8 +31,8 @@ export default function Footer() {
 
                     {/* Brand & Contact */}
                     <div className="col-span-1 lg:col-span-4">
-                        <Link href="/" className="text-3xl font-bold tracking-tight text-white mb-6 inline-block">
-                            STUNDA<span className="text-brand-magenta">.</span>
+                        <Link href="/" className="mb-6 inline-block">
+                            <Image src="/logo.png" alt="Stunda Solutions" width={160} height={45} className="h-10 w-auto brightness-0 invert" />
                         </Link>
                         <p className="text-white/70 leading-relaxed mb-4 max-w-sm">
                             Premium IT-consultancybedrijf gespecialiseerd in razendsnelle, succesvolle Odoo ERP implementaties. Ontgrendel uw volledige zakelijke potentieel.

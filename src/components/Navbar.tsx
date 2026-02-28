@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Menu, X, BarChart3, Users, Settings, Rocket, GitMerge, FileText, ChevronRight, Boxes, CircleDollarSign, Wrench, Briefcase, HeartHandshake, LineChart } from "lucide-react";
 
@@ -34,8 +35,8 @@ export default function Navbar() {
             <div className="mx-auto px-8 h-16 flex items-center justify-between relative">
 
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-bold tracking-tight text-brand-indigo z-50 relative">
-                    STUNDA<span className="text-brand-magenta">.</span>
+                <Link href="/" className="z-50 relative flex items-center">
+                    <Image src="/logo.png" alt="Stunda Solutions" width={140} height={40} className="h-9 w-auto" priority />
                 </Link>
 
                 {/* Desktop Menu */}
