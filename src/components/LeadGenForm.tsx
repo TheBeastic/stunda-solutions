@@ -19,14 +19,35 @@ export default function LeadGenForm() {
     const handleNext = () => setStep((s) => Math.min(s + 1, 3));
     const handleBack = () => setStep((s) => Math.max(s - 1, 1));
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate API call
-        setTimeout(() => {
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/info@stunda.be", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    ...formData,
+                    _subject: `Nieuwe Audit Aanvraag van ${formData.name}`,
+                    _template: "table"
+                })
+            });
+
+            if (response.ok) {
+                setIsSuccess(true);
+            } else {
+                alert("Er is iets misgegaan bij het verzenden. Probeer het later opnieuw.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Er is een fout opgetreden. Controleer uw verbinding.");
+        } finally {
             setIsSubmitting(false);
-            setIsSuccess(true);
-        }, 1500);
+        }
     };
 
     const updateFormData = (field: keyof typeof formData, value: string) => {
@@ -170,12 +191,14 @@ export default function LeadGenForm() {
                                                     />
                                                 </div>
                                                 <div>
-                                                    <label className="block text-sm font-medium text-brand-indigo/70 mb-1">Telefoonnummer (Optioneel)</label>
+                                                    <label className="block text-sm font-medium text-brand-indigo/70 mb-1">Telefoonnummer *</label>
                                                     <input
+                                                        required
                                                         type="tel"
                                                         className="w-full p-3 border border-brand-indigo/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white"
                                                         value={formData.phone}
                                                         onChange={(e) => updateFormData("phone", e.target.value)}
+                                                        placeholder="+32 469 73 29 33"
                                                     />
                                                 </div>
                                             </motion.div>
@@ -209,8 +232,8 @@ export default function LeadGenForm() {
                                             <button
                                                 type="button"
                                                 onClick={(e) => {
-                                                    if (!formData.name || !formData.email) {
-                                                        alert("Vul a.u.b. uw naam en e-mailadres in.");
+                                                    if (!formData.name || !formData.email || !formData.phone) {
+                                                        alert("Vul a.u.b. uw naam, e-mailadres en telefoonnummer in.");
                                                         return;
                                                     }
                                                     handleSubmit(e);

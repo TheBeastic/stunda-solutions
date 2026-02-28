@@ -163,6 +163,9 @@ export default function Navbar() {
                     <Link href="/#audit" className="text-sm font-semibold text-brand-indigo/80 hover:text-brand-magenta transition-colors">
                         Over Ons
                     </Link>
+                    <Link href="/contact" className="text-sm font-semibold text-brand-indigo/80 hover:text-brand-magenta transition-colors">
+                        Contact
+                    </Link>
                 </div>
 
                 {/* Desktop CTA */}
@@ -276,6 +279,9 @@ export default function Navbar() {
                             <div className="border-t border-brand-indigo/5 pt-2 flex flex-col gap-2">
                                 <Link href="/#audit" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3">
                                     Over Ons
+                                </Link>
+                                <Link href="/contact" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3 border-t border-brand-indigo/5">
+                                    Contact
                                 </Link>
 
                                 <Link href="/#audit" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="mt-2 px-5 py-3 bg-brand-indigo text-white text-center font-semibold rounded-full w-full">
