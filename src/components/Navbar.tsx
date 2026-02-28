@@ -32,11 +32,11 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border border-brand-indigo/10 rounded-2xl shadow-lg shadow-black/[0.04]">
-            <div className="mx-auto px-8 h-16 flex items-center justify-between relative">
+            <div className="mx-auto px-8 h-[72px] flex items-center justify-between relative">
 
                 {/* Logo */}
                 <Link href="/" className="z-50 relative flex items-center">
-                    <Image src="/logo.png" alt="Stunda Solutions" width={140} height={40} className="h-9 w-auto" priority />
+                    <Image src="/stunda-logo.png" alt="Stunda Solutions" width={220} height={44} className="h-11 w-auto" unoptimized priority />
                 </Link>
 
                 {/* Desktop Menu */}

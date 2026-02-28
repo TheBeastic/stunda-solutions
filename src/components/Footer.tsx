@@ -32,7 +32,7 @@ export default function Footer() {
                     {/* Brand & Contact */}
                     <div className="col-span-1 lg:col-span-4">
                         <Link href="/" className="mb-6 inline-block">
-                            <Image src="/logo.png" alt="Stunda Solutions" width={160} height={45} className="h-10 w-auto brightness-0 invert" />
+                            <Image src="/stunda-logo.png" alt="Stunda Solutions" width={220} height={44} className="h-12 w-auto brightness-0 invert" unoptimized />
                         </Link>
                         <p className="text-white/70 leading-relaxed mb-4 max-w-sm">
                             Premium IT-consultancybedrijf gespecialiseerd in razendsnelle, succesvolle Odoo ERP implementaties. Ontgrendel uw volledige zakelijke potentieel.
