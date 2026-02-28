@@ -30,7 +30,7 @@ export default function Navbar() {
     const [mobileAccordion, setMobileAccordion] = useState<string | null>(null);
 
     return (
-        <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border border-brand-indigo/10 rounded-full shadow-lg shadow-black/[0.04]">
+        <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border border-brand-indigo/10 rounded-2xl shadow-lg shadow-black/[0.04]">
             <div className="mx-auto px-8 h-16 flex items-center justify-between relative">
 
                 {/* Logo */}
