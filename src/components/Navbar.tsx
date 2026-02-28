@@ -30,8 +30,8 @@ export default function Navbar() {
     const [mobileAccordion, setMobileAccordion] = useState<string | null>(null);
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-brand-indigo/10">
-            <div className="container mx-auto px-6 h-20 flex items-center justify-between relative">
+        <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border border-brand-indigo/10 rounded-full shadow-lg shadow-black/[0.04]">
+            <div className="mx-auto px-8 h-16 flex items-center justify-between relative">
 
                 {/* Logo */}
                 <Link href="/" className="text-2xl font-bold tracking-tight text-brand-indigo z-50 relative">
@@ -46,7 +46,7 @@ export default function Navbar() {
 
                     {/* Odoo Modules Mega Menu Dropdown Trigger */}
                     <div
-                        className="relative h-20 flex items-center"
+                        className="relative h-16 flex items-center"
                         onMouseEnter={() => setActiveDropdown("modules")}
                         onMouseLeave={() => setActiveDropdown(null)}
                     >
@@ -62,7 +62,7 @@ export default function Navbar() {
                                     animate={{ opacity: 1, y: 0, scaleX: 1 }}
                                     exit={{ opacity: 0, y: 5, scaleX: 0.95 }}
                                     transition={{ duration: 0.2, ease: "easeOut" }}
-                                    className="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] bg-white rounded-2xl shadow-2xl border border-brand-indigo/5 overflow-hidden origin-top"
+                                    className="absolute top-16 left-1/2 -translate-x-1/2 w-[800px] bg-white rounded-2xl shadow-2xl border border-brand-indigo/5 overflow-hidden origin-top"
                                 >
                                     <div className="absolute inset-0 bg-gradient-to-br from-brand-indigo/5 to-transparent pointer-events-none" />
 
@@ -104,7 +104,7 @@ export default function Navbar() {
 
                     {/* Methode Mega Menu Dropdown Trigger */}
                     <div
-                        className="relative h-20 flex items-center"
+                        className="relative h-16 flex items-center"
                         onMouseEnter={() => setActiveDropdown("methode")}
                         onMouseLeave={() => setActiveDropdown(null)}
                     >
@@ -120,7 +120,7 @@ export default function Navbar() {
                                     animate={{ opacity: 1, y: 0, scaleX: 1 }}
                                     exit={{ opacity: 0, y: 5, scaleX: 0.95 }}
                                     transition={{ duration: 0.2, ease: "easeOut" }}
-                                    className="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] bg-white rounded-2xl shadow-2xl border border-brand-indigo/5 overflow-hidden origin-top"
+                                    className="absolute top-16 left-1/2 -translate-x-1/2 w-[800px] bg-white rounded-2xl shadow-2xl border border-brand-indigo/5 overflow-hidden origin-top"
                                 >
                                     <div className="absolute inset-0 bg-gradient-to-br from-brand-indigo/5 to-transparent pointer-events-none" />
 
@@ -191,7 +191,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="lg:hidden border-t border-brand-indigo/10 bg-white overflow-hidden"
+                        className="lg:hidden border-t border-brand-indigo/10 bg-white overflow-hidden rounded-b-3xl"
                     >
                         <div className="px-6 py-6 flex flex-col gap-2">
                             <Link href="/" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3">
