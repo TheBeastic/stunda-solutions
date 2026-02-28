@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Stunda Solutions",
   },
   description:
-    "Stunda Solutions is uw Odoo ERP implementatie partner in België. Van ROI analyse tot go-live: wij stroomlijnen uw bedrijfsprocessen met bewezen methodologie en meetbaar resultaat.",
+    "Stunda Solutions: uw Odoo ERP partner in België. Wij stroomlijnen bedrijfsprocessen van ROI-analyse tot go-live met bewezen resultaat.",
   keywords: [
     "Odoo ERP implementatie",
     "Odoo consultant België",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "Stunda Solutions",
     title: "Stunda Solutions | Odoo ERP Implementatie Partner België",
     description:
-      "Uw partner voor razendsnelle, succesvolle Odoo ERP implementaties. Van procesanalyse tot go-live in Vlaanderen en Nederland.",
+      "Uw partner voor succesvolle Odoo ERP implementaties in Vlaanderen en Nederland. Van procesanalyse tot go-live.",
   },
   other: {
     "geo.region": "BE-VLI",
@@ -115,6 +115,7 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

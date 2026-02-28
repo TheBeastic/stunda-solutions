@@ -90,6 +90,26 @@ export default function ContactPage() {
                     </div>
                 </div>
 
+                {/* Google Maps — Limburg, België */}
+                <div className="max-w-4xl mx-auto mb-20">
+                    <h2 className="text-2xl font-bold text-brand-indigo mb-6 text-center">Onze Regio</h2>
+                    <div className="rounded-3xl overflow-hidden border border-brand-indigo/10 shadow-xl">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d323263.5783645531!2d5.19694!3d50.966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c11f42d93e185b%3A0xe13ca2c7590858e7!2sLimburg!5e0!3m2!1snl!2sbe!4v1709170000000!5m2!1snl!2sbe"
+                            width="100%"
+                            height="400"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Stunda Solutions regio — Limburg, België"
+                        />
+                    </div>
+                    <p className="text-center text-brand-indigo/50 text-sm mt-4">
+                        Actief in heel Vlaanderen, Limburg en Nederland
+                    </p>
+                </div>
+
                 <div className="max-w-4xl mx-auto text-center mb-8">
                     <h2 className="text-3xl font-bold text-brand-indigo mb-4">Direct Uw Gratis Audit Aanvragen</h2>
                     <p className="text-brand-indigo/70">Vul hieronder uw gegevens in en wij nemen zo snel mogelijk contact op om de transitie-roadmap voor uw bedrijf te bespreken.</p>

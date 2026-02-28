@@ -26,9 +26,9 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
                     className="text-5xl md:text-7xl font-bold tracking-tight text-brand-indigo max-w-4xl mb-6 leading-tight"
                 >
-                    Ontgrendel uw Zakelijk Potentieel via{" "}
+                    Uw Odoo ERP Partner in België voor{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-magenta to-brand-purple">
-                        Odoo Excellentie
+                        Operationele Excellentie
                     </span>
                 </motion.h1>
 
@@ -38,7 +38,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className="text-lg md:text-xl text-brand-indigo/70 max-w-2xl mb-12"
                 >
-                    Transformeer uw activiteiten met een razendsnelle, overzichtelijke ERP-opzet die aanvoelt als een geoliede machine. Op maat gemaakt voor schaalbare groei.
+                    Transformeer uw activiteiten met een razendsnelle, overzichtelijke ERP-opzet. Van procesanalyse en ROI-berekening tot implementatie en doorlopende ondersteuning — Stunda Solutions bouwt mee aan schaalbare groei voor KMO&apos;s in Vlaanderen en Nederland.
                 </motion.p>
 
                 <motion.div

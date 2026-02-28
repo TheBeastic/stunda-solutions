@@ -7,25 +7,25 @@ const steps = [
     {
         number: "01",
         title: "Analyse",
-        description: "Een diepgaande analyse van uw huidige workflows om knelpunten te identificeren en de ideale Odoo-architectuur te ontwerpen.",
+        description: "Een diepgaande analyse van uw huidige workflows om knelpunten te identificeren en de ideale Odoo-architectuur te ontwerpen. Inclusief ROI-berekening per module.",
         icon: Search,
     },
     {
         number: "02",
         title: "Implementatie",
-        description: "Uiterst nauwkeurige, razendsnelle uitrol van de gekozen modules, perfect afgestemd op uw operationele behoeften.",
+        description: "Uiterst nauwkeurige, razendsnelle uitrol van de gekozen Odoo modules. Configuratie, data-migratie en maatwerk perfect afgestemd op uw operationele behoeften.",
         icon: Cog,
     },
     {
         number: "03",
         title: "Training",
-        description: "Uitgebreide onboarding voor uw team via een dedicated SPOC, om een soepele adoptie en directe productiviteitswinst te garanderen.",
+        description: "Uitgebreide onboarding voor uw team via een dedicated SPOC met hands-on Odoo training. Soepele adoptie en directe productiviteitswinst gegarandeerd.",
         icon: GraduationCap,
     },
     {
         number: "04",
         title: "Ondersteuning",
-        description: "Doorlopend proactief onderhoud en snelle ondersteuning om uw systeem perfect draaiende te houden.",
+        description: "Doorlopend proactief onderhoud, voortgangsrapportages en snelle ondersteuning. Wij houden uw Odoo ERP systeem perfect draaiende en geoptimaliseerd.",
         icon: HeadphonesIcon,
     }
 ];
@@ -53,7 +53,7 @@ export default function StundaMethod() {
                         transition={{ delay: 0.1 }}
                         className="text-3xl md:text-5xl font-bold tracking-tight mb-4"
                     >
-                        Uiterste Precisie. Snelle ROI.
+                        Bewezen Odoo Implementatie Methode. Snelle ROI.
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ export default function StundaMethod() {
                         transition={{ delay: 0.2 }}
                         className="text-lg text-white/70 max-w-2xl mx-auto"
                     >
-                        Ons beproefde vierfasenproces garandeert een naadloze overgang naar operationele excellentie zonder downtime.
+                        Ons beproefde vierfasenproces garandeert een naadloze overgang naar operationele excellentie. Van initiële procesanalyse tot doorlopende ondersteuning — zonder downtime of productiviteitsverlies.
                     </motion.p>
                 </div>
 

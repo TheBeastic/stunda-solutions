@@ -7,7 +7,7 @@ import Link from "next/link";
 const solutions = [
     {
         title: "Voorraad & WMS",
-        description: "Real-time tracking, geautomatiseerde bestellingen en slim magazijnbeheer.",
+        description: "Real-time tracking, geautomatiseerde bestellingen en slim magazijnbeheer. Inclusief barcode scanning, picking strategieën en warehouse management.",
         icon: Boxes,
         href: "/odoo-modules/voorraad-en-wms",
         color: "from-blue-500 to-cyan-400",
@@ -15,7 +15,7 @@ const solutions = [
     },
     {
         title: "Financiën",
-        description: "Geïntegreerde boekhouding, facturatie en onkosten met directe multi-valuta rapportage.",
+        description: "Geïntegreerde boekhouding, facturatie en onkosten met directe bankkoppelingen. Automatische BTW-aangiften en financiële rapportages in real-time.",
         icon: CircleDollarSign,
         href: "/odoo-modules/financien",
         color: "from-emerald-500 to-teal-400",
@@ -23,7 +23,7 @@ const solutions = [
     },
     {
         title: "CRM & Verkoop",
-        description: "Volg leads, sluit deals en krijg moeiteloos nauwkeurige verkoopprognoses.",
+        description: "Volg leads, sluit deals en krijg nauwkeurige verkoopprognoses. Beheer offertes en klantrelaties in een vloeiende pipeline.",
         icon: Users,
         href: "/odoo-modules/crm-en-verkoop",
         color: "from-brand-magenta to-pink-500",
@@ -31,7 +31,7 @@ const solutions = [
     },
     {
         title: "Productie (MRP)",
-        description: "Plan en volg uw productieprocessen met geavanceerde MRP-integratie.",
+        description: "Plan en volg productieprocessen met geavanceerde MRP-integratie. Werkorders, stuklijsten en kwaliteitscontrole in één systeem.",
         icon: Wrench,
         href: "/odoo-modules/productie",
         color: "from-brand-purple to-indigo-500",
@@ -39,7 +39,7 @@ const solutions = [
     },
     {
         title: "Project Management",
-        description: "Plan taken, beheer urenstaten en houd projecten moeiteloos binnen budget.",
+        description: "Plan taken, beheer urenstaten en houd projecten binnen budget. Gantt-charts, tijdsregistratie en klantportaal inbegrepen.",
         icon: Briefcase,
         href: "/odoo-modules/projectmanagement",
         color: "from-orange-500 to-amber-400",
@@ -47,7 +47,7 @@ const solutions = [
     },
     {
         title: "Human Resources",
-        description: "Centraliseer medewerkersgegevens, werving, en urenregistratie in één overzicht.",
+        description: "Centraliseer medewerkersgegevens, werving en urenregistratie. Verlofbeheer, evaluaties en personeelsplanning vanuit één overzicht.",
         icon: HeartHandshake,
         href: "/odoo-modules/human-resources",
         color: "from-rose-500 to-red-400",
@@ -55,7 +55,7 @@ const solutions = [
     },
     {
         title: "Business Intelligence",
-        description: "Transformeer ruwe data naar visuele dashboards voor datagedreven beslissingen.",
+        description: "Transformeer ruwe data naar visuele dashboards. Cross-module rapportage en real-time KPI's voor datagedreven beslissingen.",
         icon: LineChart,
         href: "/odoo-modules/business-intelligence",
         color: "from-violet-500 to-fuchsia-400",
@@ -84,10 +84,10 @@ export default function OdooSolutionsGrid() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-brand-indigo mb-4">
-                        Geïntegreerde Modules voor Elke Behoefte
+                        Odoo ERP Modules voor Elke Bedrijfsbehoefte
                     </h2>
                     <p className="text-lg text-brand-indigo/60 max-w-2xl mx-auto">
-                        Ervaar de kracht van een volledig geïntegreerd systeem. Stunda Solutions stemt Odoo perfect af op uw specifieke operationele workflows.
+                        Ervaar de kracht van een volledig geïntegreerd ERP-systeem. Stunda Solutions stemt elke Odoo module perfect af op uw specifieke operationele workflows — van voorraadbeheer en boekhouding tot CRM en business intelligence.
                     </p>
                 </div>
 
