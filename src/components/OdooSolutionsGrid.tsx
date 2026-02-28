@@ -134,7 +134,9 @@ export default function OdooSolutionsGrid() {
                             {/* Decorative line */}
                             <div className="absolute bottom-0 left-0 h-1 w-0 group-hover:w-full bg-gradient-to-r transition-all duration-500 ease-out z-10 from-brand-magenta to-brand-purple" />
 
-                            <Link href={solution.href} className="absolute inset-0 z-20" aria-label={`Lees meer over ${solution.title}`} />
+                            <Link href={solution.href} className="absolute inset-0 z-20" aria-label={`Lees meer over ${solution.title}`}>
+                                <span className="sr-only">{`Lees meer over ${solution.title}`}</span>
+                            </Link>
                         </motion.div>
                     ))}
                 </motion.div>

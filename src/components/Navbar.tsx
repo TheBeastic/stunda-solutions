@@ -94,7 +94,7 @@ export default function Navbar() {
                                             Alle apps naadloos geïntegreerd in één systeem.
                                         </p>
                                         <Link href="/#solutions" onClick={() => setActiveDropdown(null)} className="text-sm font-bold text-brand-magenta hover:text-brand-purple transition-colors flex items-center gap-1">
-                                            Bekijk overzicht <ChevronRight className="w-4 h-4" />
+                                            Alle Odoo Modules <ChevronRight className="w-4 h-4" />
                                         </Link>
                                     </div>
                                 </motion.div>
@@ -152,7 +152,7 @@ export default function Navbar() {
                                             Leer de Stunda Methode van A tot Z kennen.
                                         </p>
                                         <Link href="/#method" onClick={() => setActiveDropdown(null)} className="text-sm font-bold text-brand-magenta hover:text-brand-purple transition-colors flex items-center gap-1">
-                                            Bekijk overzicht <ChevronRight className="w-4 h-4" />
+                                            Onze Volledige Methode <ChevronRight className="w-4 h-4" />
                                         </Link>
                                     </div>
                                 </motion.div>

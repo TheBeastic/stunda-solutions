@@ -108,7 +108,7 @@ export default function Footer() {
                             Contact
                         </Link>
                         <Link href="/#audit" className="text-white/40 hover:text-white transition-colors">
-                            Gratis Audit
+                            Gratis Audit Aanvragen
                         </Link>
                         <Link href="/privacy" className="text-white/40 hover:text-white transition-colors">
                             Privacybeleid
