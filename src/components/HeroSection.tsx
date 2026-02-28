@@ -10,7 +10,7 @@ export default function HeroSection() {
             <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-brand-magenta/20 blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-brand-purple/20 blur-[150px] rounded-full pointer-events-none" />
 
-            <div className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center">
+            <div className="container mx-auto px-6 pt-24 relative z-10 text-center flex flex-col items-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
