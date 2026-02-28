@@ -73,12 +73,6 @@ export default function Financien() {
                     </p>
                 </div>
 
-                {/* Image Placeholder 2 */}
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-emerald-500/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <FileSpreadsheet className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van financi&euml;le rapportage overzicht</p>
-                </div>
-
                 {/* CTA Section */}
                 <div className="bg-gradient-to-r from-emerald-600 to-brand-indigo rounded-2xl p-8 md:p-12 text-center text-white mb-16">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4">Bespaar tijd op uw administratie</h2>

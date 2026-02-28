@@ -69,11 +69,6 @@ export default function Productie() {
                     </p>
                 </div>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-purple-500/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Cog className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van werkorder tracking op de werkvloer</p>
-                </div>
-
                 <div className="bg-gradient-to-r from-purple-600 to-brand-indigo rounded-2xl p-8 md:p-12 text-center text-white mb-16">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4">Klaar om uw productie te digitaliseren?</h2>
                     <p className="text-white/80 mb-8 max-w-2xl mx-auto">

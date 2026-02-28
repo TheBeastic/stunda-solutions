@@ -28,10 +28,6 @@ export default function Voortgangsrapport() {
                     Onze relatie eindigt niet bij oplevering. Met het periodieke <strong className="text-brand-magenta">Voortgangsrapport</strong> evalueren we de behaalde ROI en bepalen we samen met u de koers voor de toekomst.
                 </p>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/10 via-brand-magenta/5 to-transparent border border-brand-indigo/20 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <FileText className="w-16 h-16 text-brand-indigo/30 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van een kwartaal voortgangsrapport</p>
-                </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Wat gebeurt er in deze fase?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
@@ -62,10 +58,6 @@ export default function Voortgangsrapport() {
                     </p>
                 </div>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-brand-indigo/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Lightbulb className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van strategische roadmap voor de komende jaren</p>
-                </div>
 
                 <div className="bg-gradient-to-r from-brand-indigo to-brand-magenta rounded-2xl p-8 md:p-12 text-center text-white mb-16">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4">Begin vandaag met uw Odoo-journey</h2>

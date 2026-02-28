@@ -28,10 +28,6 @@ export default function Implementatie() {
                     Dit is de kern van uw transformatie. Gedurende <strong className="text-brand-indigo">80% van de projecttijd</strong> focussen we ons volledig op analyse, configuratie, ontwikkeling en intensieve testcycli.
                 </p>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/10 via-brand-purple/5 to-transparent border border-brand-indigo/20 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Settings className="w-16 h-16 text-brand-indigo/30 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Screenshot van de sprint planning en voortgang</p>
-                </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Wat gebeurt er in deze fase?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
@@ -62,10 +58,6 @@ export default function Implementatie() {
                     </p>
                 </div>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-brand-indigo/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Code className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van ontwikkelomgeving en testresultaten</p>
-                </div>
 
                 <div className="bg-gradient-to-r from-brand-indigo to-brand-purple rounded-2xl p-8 md:p-12 text-center text-white mb-16">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4">Uw systeem, op maat gebouwd</h2>

@@ -28,10 +28,6 @@ export default function ROIAnalyse() {
                     Voordat we starten met ontwikkelen, bepalen we exact de verwachte <strong className="text-brand-magenta">ROI (Return on Investment)</strong>. Dit is cruciaal om ervoor te zorgen dat elke euro die u in Odoo investeert, zichzelf terugverdient.
                 </p>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-magenta/10 via-brand-indigo/5 to-transparent border border-brand-magenta/20 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <BarChart3 className="w-16 h-16 text-brand-magenta/40 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van een ROI Analyse Dashboard</p>
-                </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-8">Wat gebeurt er in deze fase?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
@@ -62,10 +58,6 @@ export default function ROIAnalyse() {
                     </p>
                 </div>
 
-                <div className="rounded-2xl bg-gradient-to-br from-brand-indigo/5 via-brand-magenta/5 to-transparent border border-brand-indigo/10 p-12 md:p-16 flex flex-col items-center justify-center text-center mb-16">
-                    <Target className="w-16 h-16 text-brand-indigo/20 mb-4" />
-                    <p className="text-brand-indigo/40 font-medium text-sm">Voorbeeld van procesanalyse en module mapping</p>
-                </div>
 
                 <div className="bg-gradient-to-r from-brand-magenta to-brand-indigo rounded-2xl p-8 md:p-12 text-center text-white mb-16">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4">Start met een gratis ROI Analyse</h2>
