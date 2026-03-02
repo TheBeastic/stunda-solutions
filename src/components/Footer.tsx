@@ -37,7 +37,7 @@ export default function Footer() {
                             Premium IT-consultancybedrijf gespecialiseerd in razendsnelle, succesvolle Odoo ERP implementaties. Ontgrendel uw volledige zakelijke potentieel.
                         </p>
                         <p className="text-white/50 text-sm mb-8 max-w-sm">
-                            Uw Odoo ERP implementatie partner in Vlaanderen, Limburg en heel België. Ook actief in Nederland.
+                            Uw Odoo ERP implementatie expert in Vlaanderen, Limburg en heel België. Ook actief in Nederland.
                         </p>
 
                         <div className="space-y-4">

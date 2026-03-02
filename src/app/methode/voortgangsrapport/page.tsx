@@ -18,7 +18,7 @@ export default function Voortgangsrapport() {
             <div className="container mx-auto px-6 max-w-5xl relative z-10">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-indigo/5 text-brand-indigo font-semibold text-sm mb-8">
                     <FileText className="w-4 h-4 text-brand-indigo" />
-                    Fase 6: Odoo als Strategische Partner
+                    Fase 6: Odoo als Strategische Expert
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold text-brand-indigo mb-6">
@@ -43,12 +43,12 @@ export default function Voortgangsrapport() {
                 </div>
 
                 <div className="prose prose-lg prose-indigo max-w-none text-brand-indigo/80 mb-16">
-                    <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-6">Uw Lange-Termijn Partner</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold text-brand-indigo mb-6">Uw Lange-Termijn Expert</h2>
                     <p className="mb-6">
                         Tijdens periodieke strategische sessies introduceren we nieuwe Odoo-features van de nieuwste versies en bekijken we hoe we uw bedrijfsprocessen nog strakker kunnen automatiseren.
                     </p>
                     <p className="mb-6">
-                        Stunda Solutions fungeert als uw lange-termijn IT-partner die meegroeit met uw succes. Of het nu gaat om hardware integraties, e-commerce uitbreidingen of internationale roll-outs, u heeft altijd een strategisch plan op maat klaarliggen.
+                        Stunda Solutions fungeert als uw lange-termijn IT-expert die meegroeit met uw succes. Of het nu gaat om hardware integraties, e-commerce uitbreidingen of internationale roll-outs, u heeft altijd een strategisch plan op maat klaarliggen.
                     </p>
                     <p className="mb-6">
                         We monitoren de adoptie van het systeem door uw medewerkers en identificeren gebieden waar aanvullende training of procesoptimalisatie nodig is. Zo haalt u het maximale uit uw Odoo-investering.
@@ -62,7 +62,7 @@ export default function Voortgangsrapport() {
                 <div className="bg-gradient-to-r from-brand-indigo to-brand-magenta rounded-2xl p-8 md:p-12 text-center text-white mb-16">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4">Begin vandaag met uw Odoo-journey</h2>
                     <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-                        Stunda is uw strategische partner voor de lange termijn. Plan een gratis audit en ontdek de mogelijkheden.
+                        Stunda is uw strategische expert voor de lange termijn. Plan een gratis audit en ontdek de mogelijkheden.
                     </p>
                     <Link href="/#audit" className="inline-flex items-center gap-2 px-8 py-3 bg-white text-brand-indigo font-bold rounded-full hover:bg-zinc-100 transition-colors">
                         Gratis Odoo Audit <ChevronRight className="w-5 h-5" />

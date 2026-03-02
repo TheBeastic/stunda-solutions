@@ -26,7 +26,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
                     className="text-5xl md:text-7xl font-bold tracking-tight text-brand-indigo max-w-4xl mb-6 leading-tight"
                 >
-                    Uw Odoo ERP Partner in België voor{" "}
+                    Uw Odoo ERP Expert in België voor{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-magenta to-brand-purple">
                         Operationele Excellentie
                     </span>

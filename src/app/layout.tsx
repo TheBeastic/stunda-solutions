@@ -19,15 +19,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://stunda.be"),
   title: {
-    default: "Stunda Solutions | Odoo ERP Implementatie Partner België",
+    default: "Stunda Solutions | Odoo ERP Implementatie Expert België",
     template: "%s | Stunda Solutions",
   },
   description:
-    "Stunda Solutions: uw Odoo ERP partner in België. Wij stroomlijnen bedrijfsprocessen van ROI-analyse tot go-live met bewezen resultaat.",
+    "Stunda Solutions: uw Odoo ERP expert in België. Wij stroomlijnen bedrijfsprocessen van ROI-analyse tot go-live met bewezen resultaat.",
   keywords: [
     "Odoo ERP implementatie",
     "Odoo consultant België",
-    "Odoo partner Vlaanderen",
+    "Odoo expert Vlaanderen",
     "Business proces optimalisatie",
     "ERP implementatie België",
     "Odoo ROI analyse",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     "Odoo boekhouding",
     "ERP consultant Limburg",
     "Odoo Nederland",
-    "Odoo implementatie partner",
+    "Odoo implementatie expert",
   ],
   authors: [{ name: "Stunda Solutions" }],
   creator: "Stunda Solutions",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     locale: "nl_BE",
     url: "https://stunda.be",
     siteName: "Stunda Solutions",
-    title: "Stunda Solutions | Odoo ERP Implementatie Partner België",
+    title: "Stunda Solutions | Odoo ERP Implementatie Expert België",
     description:
-      "Uw partner voor succesvolle Odoo ERP implementaties in Vlaanderen en Nederland. Van procesanalyse tot go-live.",
+      "Uw expert voor succesvolle Odoo ERP implementaties in Vlaanderen en Nederland. Van procesanalyse tot go-live.",
   },
   other: {
     "geo.region": "BE-VLI",
@@ -71,7 +71,7 @@ const jsonLd = {
       telephone: "+32469732933",
       email: "info@stunda.be",
       description:
-        "Premium Odoo ERP implementatie partner gespecialiseerd in bedrijfsprocesoptimalisatie voor KMO's in België en Nederland.",
+        "Premium Odoo ERP implementatie expert gespecialiseerd in bedrijfsprocesoptimalisatie voor KMO's in België en Nederland.",
       areaServed: [
         { "@type": "Country", name: "België" },
         { "@type": "Country", name: "Nederland" },
@@ -159,7 +159,7 @@ const jsonLd = {
           name: "Wat doet Stunda Solutions?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Stunda Solutions is een premium Odoo ERP implementatie partner in België. Wij helpen KMO's hun bedrijfsprocessen te optimaliseren met Odoo modules voor voorraadbeheer, boekhouding, CRM, productie, HR en business intelligence.",
+            text: "Stunda Solutions is een premium Odoo ERP implementatie expert in België. Wij helpen KMO's hun bedrijfsprocessen te optimaliseren met Odoo modules voor voorraadbeheer, boekhouding, CRM, productie, HR en business intelligence.",
           },
         },
         {

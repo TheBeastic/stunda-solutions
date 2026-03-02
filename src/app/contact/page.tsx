@@ -15,7 +15,7 @@ export default function ContactPage() {
                         Neem <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-magenta to-brand-purple">Contact</span> Op
                     </h1>
                     <p className="text-lg text-brand-indigo/70 leading-relaxed max-w-2xl mx-auto">
-                        Klaar om uw bedrijfsprocessen te automatiseren? Als Odoo ERP implementatie partner in Vlaanderen en België staan wij klaar om de perfecte oplossing voor uw organisatie te realiseren.
+                        Klaar om uw bedrijfsprocessen te automatiseren? Als Odoo ERP implementatie expert in Vlaanderen en België staan wij klaar om de perfecte oplossing voor uw organisatie te realiseren.
                     </p>
                 </div>
 

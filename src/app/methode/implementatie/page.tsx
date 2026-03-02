@@ -7,7 +7,7 @@ const features = [
     { icon: Code, title: "Configuratie & Maatwerk", desc: "We configureren Odoo-modules naar uw exacte specificaties en ontwikkelen maatwerk waar standaard functionaliteit tekortschiet." },
     { icon: TestTube, title: "Iteratief Testen", desc: "Via regelmatige sprints leveren we werkende functionaliteit op. U test en geeft feedback, zodat het systeem perfect aansluit." },
     { icon: Database, title: "Data Migratie", desc: "Bestaande data uit uw huidige systemen wordt veilig en zorgvuldig gemigreerd naar Odoo. Geen dataverlies." },
-    { icon: RefreshCw, title: "Integraties", desc: "We koppelen Odoo aan uw bestaande tools: betaalproviders, webshops, logistieke partners en meer." },
+    { icon: RefreshCw, title: "Integraties", desc: "We koppelen Odoo aan uw bestaande tools: betaalproviders, webshops, logistieke experts en meer." },
 ];
 
 export default function Implementatie() {
