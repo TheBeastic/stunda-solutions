@@ -11,6 +11,8 @@ export default function LeadGenForm() {
     const [formData, setFormData] = useState({
         companySize: "",
         currentERP: "",
+        companyName: "",
+        vatNumber: "",
         name: "",
         email: "",
         phone: ""
@@ -169,6 +171,27 @@ export default function LeadGenForm() {
                                             >
                                                 <h4 className="text-xl font-bold text-brand-indigo mb-6">Contactgegevens</h4>
                                                 <div>
+                                                    <label className="block text-sm font-medium text-brand-indigo/70 mb-1">Bedrijfsnaam *</label>
+                                                    <input
+                                                        required
+                                                        type="text"
+                                                        className="w-full p-3 border border-brand-indigo/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white"
+                                                        value={formData.companyName}
+                                                        onChange={(e) => updateFormData("companyName", e.target.value)}
+                                                        placeholder="Stunda Solutions"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <label className="block text-sm font-medium text-brand-indigo/70 mb-1">BTW Nummer</label>
+                                                    <input
+                                                        type="text"
+                                                        className="w-full p-3 border border-brand-indigo/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-magenta bg-white"
+                                                        value={formData.vatNumber}
+                                                        onChange={(e) => updateFormData("vatNumber", e.target.value)}
+                                                        placeholder="BE 0123.456.789"
+                                                    />
+                                                </div>
+                                                <div>
                                                     <label className="block text-sm font-medium text-brand-indigo/70 mb-1">Volledige Naam *</label>
                                                     <input
                                                         required
@@ -232,8 +255,8 @@ export default function LeadGenForm() {
                                             <button
                                                 type="button"
                                                 onClick={(e) => {
-                                                    if (!formData.name || !formData.email || !formData.phone) {
-                                                        alert("Vul a.u.b. uw naam, e-mailadres en telefoonnummer in.");
+                                                    if (!formData.companyName || !formData.name || !formData.email || !formData.phone) {
+                                                        alert("Vul a.u.b. uw bedrijfsnaam, naam, e-mailadres en telefoonnummer in.");
                                                         return;
                                                     }
                                                     handleSubmit(e);
