@@ -42,7 +42,6 @@ export const metadata: Metadata = {
   creator: "Stunda Solutions",
   publisher: "Stunda Solutions",
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://stunda.be" },
   openGraph: {
     type: "website",
     locale: "nl_BE",

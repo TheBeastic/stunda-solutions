@@ -160,6 +160,9 @@ export default function Navbar() {
                         </AnimatePresence>
                     </div>
 
+                    <Link href="/integraties" className="text-sm font-semibold text-brand-indigo/80 hover:text-brand-magenta transition-colors">
+                        Integraties
+                    </Link>
                     <Link href="/#audit" className="text-sm font-semibold text-brand-indigo/80 hover:text-brand-magenta transition-colors">
                         Over Ons
                     </Link>
@@ -277,7 +280,10 @@ export default function Navbar() {
                             </div>
 
                             <div className="border-t border-brand-indigo/5 pt-2 flex flex-col gap-2">
-                                <Link href="/#audit" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3">
+                                <Link href="/integraties" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3">
+                                    Integraties
+                                </Link>
+                                <Link href="/#audit" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3 border-t border-brand-indigo/5">
                                     Over Ons
                                 </Link>
                                 <Link href="/contact" onClick={() => { setIsMobileMenuOpen(false); setMobileAccordion(null); }} className="text-lg font-bold text-brand-indigo py-3 border-t border-brand-indigo/5">
