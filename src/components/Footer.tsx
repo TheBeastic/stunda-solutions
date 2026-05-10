@@ -101,7 +101,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-white/40 text-sm text-center md:text-left">
-                        &copy; {new Date().getFullYear()} Stunda Solutions. Alle rechten voorbehouden.
+                        &copy; {new Date().getFullYear()} Stunda Solutions. Alle rechten voorbehouden. <span className="hidden sm:inline mx-2 text-white/20">|</span> <span className="block sm:inline mt-2 sm:mt-0">BTW: BE1037241685</span>
                     </p>
                     <div className="flex flex-wrap gap-6 text-sm">
                         <Link href="/contact" className="text-white/40 hover:text-white transition-colors">
